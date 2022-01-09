@@ -1,0 +1,45 @@
+{
+    "name": "websnack/migratetool",
+    "description": "Migration from M1 to M2",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William",
+            "email": "william@websnack.dk"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "App\\Controllers\\": "app/Http/Controllers/",
+            "App\\Models\\": "app/Http/Models/",
+            "App\\" : "app/"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "https://repo.magento.com"
+        }
+    },
+    "require": {
+        "magento/data-migration-tool": "2.4.3",
+        "eftec/bladeonehtml": "dev-master",
+        "pecee/simple-router": "dev-master",
+        "ext-simplexml": "*",
+        "ext-xml": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-zip": "*",
+        "nesbot/carbon": "2.x-dev",
+        "vlucas/phpdotenv": "5.3.*",
+        "ext-curl": "*"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}

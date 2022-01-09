@@ -1,0 +1,8 @@
+vendor
+app/compiles
+.idea
+.DS_Store
+app/public/migrations/_temp/*
+.ddev/*
+/app/public/migrations
+.env
